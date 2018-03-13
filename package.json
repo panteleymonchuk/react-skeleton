@@ -1,0 +1,15 @@
+{
+  "name": "React-skeleton",
+  "version": "1.0.0",
+  "description": "React skeleton for future projects",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
+}
