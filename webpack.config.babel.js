@@ -1,7 +1,6 @@
 import Config, { environment } from 'webpack-config';
 
-console.log('process', process.env.NODE_ENV);
-
+// process.env.NODE_ENV - доступен если в packege.json указать 'export NODE_ENV' для OS X, или SET для windows
 environment.setAll({
   env: () => process.env.NODE_ENV
 });

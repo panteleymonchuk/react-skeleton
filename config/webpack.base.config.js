@@ -1,6 +1,6 @@
 import Config from 'webpack-config';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-// let webpack = require('webpack');
+let webpack = require('webpack');
 // let UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 export default new Config().merge({
@@ -18,6 +18,7 @@ export default new Config().merge({
     ]
   },
   plugins: [
+    new webpack.EnvironmentPlugin(["NODE_ENV"]),
     new HtmlWebpackPlugin({
       template: './client/src/index.html',
       inject: 'body'
