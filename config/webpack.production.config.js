@@ -3,7 +3,6 @@ import Config from 'webpack-config';
 let UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 export default new Config().extend('./config/webpack.base.config.js').merge({
-  mode: 'production',
   output: {
     filename: 'bundle.min.js'
   },
